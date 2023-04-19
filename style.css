@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+
+    background-color:rgb(247, 175, 246);
+  
+    background-size:  cover;
+    background-position: center;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: color #f8f8f8;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    right: 0 ;
+    z-index: 100;
+}
+
+section nav .logo{
+    font-size: 35px;
+    color: #367298;
+    margin: 5px 15px;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+
+}
+.navi li{
+    text-decoration: none;
+}
+section nav .logo span{
+    color: #06406f;
+    text-decoration: underline;
+}
+nav li ul{
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    margin: 5px 15px;
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+ li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #367298;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover{
+    color: #367298;
+
+}
+
+section .main .main_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .main_content .main_text h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, #367298, #06406f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 2%;
+}
+
+section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right, #367298, #06406f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 2%;
+}
+
+section .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%
+}
+
+section .main .main_content .main_image img{
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+
+section .main .social_icon{
+    
+    position: absolute;
+    top: 50%;
+    left: 98.4%;
+    transform: translate(-50%, -50%);
+    font-size: 28px; 
+
+}
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: #367298
+}
+
+section .main .button{
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #367298, #06406f );
+}
+
+section .main .button a{
+    color: white;
+    text-decoration: none;
+}
+
+section .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s ;
+}
+
+section .main .button:hover i{
+    transform: translateX(6px);
+}
+
+/*products*/
+
+section{
+   
+    background-color:rgb(247, 175, 246);
+    
+    background-size:  cover;
+    background-position: center;
+}
+
+.products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+}
+
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #367298, #06406f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 2%;
+
+}
