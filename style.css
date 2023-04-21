@@ -10,9 +10,8 @@ html {
 
 section {
 
-    background-color:rgb(247, 175, 246);
-  
-    background-size:  cover;
+    background-color:rgb(245, 220, 244);
+    background-size: contain;
     background-position: center;
 }
 
@@ -171,7 +170,7 @@ section .main .button:hover i{
 
 section{
    
-    background-color:rgb(247, 175, 246);
+    background-color:rgb(245, 220, 244);
     
     background-size:  cover;
     background-position: center;
@@ -195,4 +194,92 @@ section{
     -webkit-text-fill-color: transparent;
     left: 2%;
 
+}
+
+.box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #06406f ;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+
+.card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 7px;
+    transform: translatex(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card:hover .small_card{
+    transform: translateX(2px);
+    cursor:pointer;
+    opacity: 1;
+}
+
+.card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .image img{
+    width:150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+}
+
+.small_card i:hover{
+    color: red;
+}
+
+.card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products_text p{
+    color: #91919191;
+    line-height: 21px ;
+    margin: 8px 0;
+}
+
+.products_text h3{
+    margin: 7px 0;
+}
+
+.products_text .products_star{
+    color: orange;
+    margin-bottom:19px;
+    cursor:pointer;
+}
+
+.products .box .card .products_text .btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #367298, #06406f) ;
+    color: white;
 }
