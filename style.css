@@ -6,13 +6,9 @@
 }
 html {
     scroll-behavior: smooth;
-}
-
-section {
-
     background-color:rgb(245, 220, 244);
-    background-size: contain;
-    background-position: center;
+    background-size: contain
+    
 }
 
 section nav{
@@ -21,7 +17,7 @@ section nav{
     justify-content: space-around;
     box-shadow: 0 0 8px rgba(0,0,0,0.6);
     background: color #f8f8f8;
-    position: fixed;
+    position: relative ;
     top: 0;
     left: 0 ;
     right: 0 ;
@@ -183,7 +179,7 @@ section{
 }
 
 .products h1{
-    margin: 35px 0;
+    margin: 50px 0;
     font-size: 60px;
     display: flex;
     align-items: center;
@@ -277,9 +273,62 @@ section{
     cursor:pointer;
 }
 
-.products .box .card .products_text .btn{
+.products_text .btn{
     text-decoration: none;
     padding: 10px 20px;
     background: linear-gradient(to right, #367298, #06406f) ;
     color: white;
+}
+
+.review{
+    width: 100%;
+    height:100vh;
+    padding-top: 80px
+}
+
+.review h2{
+    margin: 50px;
+    font-size: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.review h1 span{
+    background: linear-gradient(to left, #367298, #06406f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.review_box{
+    width: 96%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.review .profile .profile_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .profile_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+
 }
